@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color:#222;
+}
+
+header {
+    display:flex;
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: #279f9b;
+    font-size: 28px;
+}
+
+.menu {
+display: flex;
+}
+.hero-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #222;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.hero-content h1 .green {
+    color: #269f9a;
+}
+.hero-img{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    padding-top: 20px;
+}
+.orange-circle {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background-color:#f2994a;
+    border-radius:50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.hero-content img{
+    position: relative;
+    z-index: 2;
+    width: 42%;
+    display: block;
+}
+
+.hero-info{
+    background-color: #269f9a;
+    color: aliceblue;
+    padding: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 4;
+    margin-top: -30px;
+    border-radius: 4px;
+}
+.destionations{
+    padding: 80px 8%;
+}
+.destionation-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.destionation-title h2{
+    font-size: 55px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    width: 30%;
+    padding: 15px;
+    margin-bottom: 35px;
+    background-color: white;
+    box-shadow: 0 5px 20px rgb(0   0   0   0.08);
+}
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.card h3{
+    margin-top: 20px;
+    font-size: 22px;
+}
+.card p{
+    margin-top: 15px;
+    color: #777;
+}
+.search{
+    width: 400px;
+    text-align: right;
+}
+.search p{
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 30px;
+    padding: 5px 5px 5px 15px;
+    box-shadow: 0 4px 15px rgb(0 0 0 0,03);
+}
+.search-box input{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background: transparent;
+}
+.search-box button {
+    background-color: #f39c12;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choose-us {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.choose-us h2 {
+  font-size: 65px;
+  font-weight: normal;
+}
+
+.choose-us > p {
+  color: #777;
+  line-height: 2;
+  margin: 25px auto 60px;
+}
+
+.choose-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.choose-card {
+  width: 32%;
+  padding: 45px 30px;
+  text-align: left;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #269f9a;
+}
+
+.choose-cards1 {
+  width: 32%;
+  padding: 45px 30px;
+  text-align: left;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #269f9a;
+  background-color: #269f9a;
+  color: white;
+}
+
+.choose-card2 {
+  width: 32%;
+  padding: 45px 30px;
+  text-align: left;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #269f9a;
+}
+
+.choose-card h3 {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.choose-cards1 h3 {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.choose-card2 h3 {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.choose-card p {
+  margin-top: 25px;
+  line-height: 1.8;
+  color: #888;
+}
+
+.choose-cards1 p {
+  margin-top: 25px;
+  line-height: 1.8;
+  color: white;
+}
+
+.choose-card2 p {
+  margin-top: 25px;
+  line-height: 1.8;
+  color: #888;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+}
+
+.about-info {
+    width: 48%;
+}
+
+.about-info h2 {
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 1.3;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+.about-info p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.about-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.about-image {
+    position: relative;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: block;
+}
+
+.trip-video {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.trip-video h2 {
+    font-size: 60px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.trip-video img {
+    width: 100%;
+}
+.offer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 8%;
+    border-bottom: 1px solid #ddd;
+}
+
+.offer h2 {
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.button {
+    background-color: #269f9a;
+    color: white;
+    padding: 18px 35px;
+    border: none;
+    text-decoration: none;
+}
+
+footer {
+    padding: 70px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2 {
+    color: #269f9a;
+}
+
+footer p {
+    line-height: 2;
+    margin-top: 20px;
+}
+.social a{
+    color: #269f9a;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #222;
+    margin-left: 40px;
+}
